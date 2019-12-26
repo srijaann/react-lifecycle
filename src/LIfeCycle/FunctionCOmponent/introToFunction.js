@@ -1,7 +1,7 @@
 import React from 'react'
 
 // This is example of function without props/args
-export default function introToFunction() {
+export default function IntroToFunction() {
   return <Demo></Demo>
 }
 

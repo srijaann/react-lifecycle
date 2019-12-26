@@ -1,11 +1,12 @@
 import React from "react";
-import IntroToFunction from "./FunctionCOmponent/introToFunction";
-import FunctionWithPar from "./FunctionCOmponent/Functionwithpar";
+import IntroToFunction from "./FunctionComponent/introToFunction";
+import Functionwithpar from "./FunctionComponent/Functionwithpar";
 import ClassWithOutSt from "./ClassComponnet/ClassWithoutState";
 import ClassWithState from "./ClassComponnet/ClassWithState";
-import FunctionwithState from "./FunctionCOmponent/FunctionWithState";
+import FunctionwithState from "./FunctionComponent/FunctionWithState";
 import ClassMultiState from "./ClassComponnet/ClassMultiState";
-import FunctionMultiState from "./FunctionCOmponent/FunctionMultiState";
+import FunctionMultiState from "./FunctionComponent/FunctionMultiState";
+
 export default function Lifecycle() {
   return (
     <div>
@@ -18,7 +19,7 @@ export default function Lifecycle() {
       <section>
         <h1>About functional Component</h1>
         <IntroToFunction></IntroToFunction>
-        <FunctionWithPar></FunctionWithPar>
+        <Functionwithpar></Functionwithpar>
         <FunctionwithState></FunctionwithState>
         <FunctionMultiState></FunctionMultiState>
       </section>

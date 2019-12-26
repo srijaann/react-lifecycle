@@ -1,4 +1,8 @@
+body{
+    background-color: aquamarine;
+}
 .App{
     margin: 25px;
     padding: 30px;
+    
 }

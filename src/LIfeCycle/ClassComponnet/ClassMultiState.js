@@ -8,12 +8,22 @@ export default class ClassMultiState extends Component {
   };
 
   componentDidMount() {
+    const header = document.querySelectorAll("#header")[0];
     setInterval(() => {
+      header.innerHTML = "An updated header for the class with multiple state";
       this.setState({
+        //an updated state as lifecycle functions
         userName: "srijan25",
         firstName: "srijan",
-        lastName: "aryal"
+        lastName: "aryal" 
       });
+    }, 3000);
+  }
+
+  componentDidUpdate() {
+    const node = document.querySelectorAll("#header")[0];
+    setInterval(() => {
+      node.innerHTML = "This is updated with the componnetDidUpdate";
     }, 3000);
   }
 
@@ -38,13 +48,13 @@ export default class ClassMultiState extends Component {
   render() {
     return (
       <div>
-        <h4>This is class with multiple state demo</h4>
+        <h4 id="header">This is class with multiple state demo</h4>
         <input
           type="text"
           onChange={this.handleUserNameInput}
+          placeholder="UserName"
           value={this.state.userName}
-          placeholder="User name"
-        ></input>
+        />
         <input
           type="text"
           onChange={this.handleFirstNameInput}
